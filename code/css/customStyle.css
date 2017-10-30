@@ -1,0 +1,740 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** REVISED July 21, 2016 **/
+#skip a
+{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+#skip a:focus
+{
+	position:static;
+	width:auto;
+	height:auto;
+}
+
+#podcastButtonline{
+	margin-top:-20px;
+}
+
+.noDisplay{
+	display:none;
+}
+
+.frosted{
+	font-family: 'Archivo Black', sans-serif;
+	outline:none!important;
+}
+
+.complementaryButton{
+
+	background-color:#470414;
+	color:white;
+}
+
+body{
+	position:relative;
+	font-family: 'Arimo', sans-serif;
+	font-size:1.8em;
+	background-color:#FFFFFF;
+}
+
+body p{
+	font-size:1em;
+}
+
+.container{
+	background-color:#FFFFFF;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.container-fluid{
+	padding-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+
+/** Images**/
+.img-rounded{
+box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+.imageCaption{
+	font-size:0.8em;
+	font-color:#7F7F7F;
+}
+.source {
+	font-size:0.6em;
+}
+
+.panel li{
+	font-size:1em;
+}
+
+.well-colouredBackground{
+	background-color:#A9D88D;
+	border-color:#1C4404;
+	border-style: solid;
+	padding:10px;
+}
+
+.well-whiteBackground{
+	background-color:white;
+	border-color:#1C4404;
+	border-style: solid;
+	padding:10px;
+}
+
+/** Header and Navbar**/
+header .navbar{
+	padding:30px 0;
+	transition: all .5s ease-out;
+}
+header .navbar-default{
+	background:transparent;
+	border:none;
+}
+
+header .navbar-default .navbar-nav a{  /** This is the colour of the Minds On, Action, Consolidation links in the top right corner of the screen. **/
+	color:black; /** CHANGE to white or black so it is visible on the background image. **/
+	padding: 5px 8px;
+}
+
+header .navbar.inbody .navbar-nav a{
+	padding-top:10px;
+	background-color:transparent;
+}
+
+header .navbar-default .navbar-nav a:hover{
+	background-color:white;
+	color:#1C4404;
+}
+
+header .navbar-default .navbar-nav .active a{
+	font-weight:700;
+	color: #1C4404;
+	background:transparent;
+	border-bottom: 4px solid #1C4404;
+	text-shadow:none;
+}
+
+header .navbar-default .navbar-nav .active a:hover{
+	background:white;
+	color:#1C4404;
+	text-shadow: none;
+}
+
+header .navbar-brand{
+	visibility:hidden;
+	padding-right:3px!important;
+}
+
+.addToCollapsed{
+	display:none!important;
+	cursor:pointer;
+}
+
+.addToCollapsed a {
+    text-decoration:none!important;
+}
+
+
+.addToCollapsed a:hover {
+    color:#1C4404!important;
+}
+
+/** Fixes navigation 'jumping' when a modal opens**/
+
+body.modal-open {
+	overflow-y: scroll;
+	padding-right: 0 !important;
+}
+
+/** Nav Bar Brand **/
+
+header .navbar-brand{
+	background: url(../../_images/icons/logoTransparent.png);
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	height: auto;
+}
+
+header .navbar-brand h1{
+	color:black;
+	margin:0;
+	font-size:1em;
+	font-weight:400;
+	padding-left:38px;
+}
+
+.activityTitle{
+	position:relative;
+	top:140px;
+	left:-60px;
+}
+
+.hideLogo{
+	margin-top:20px;
+}
+.left{
+	border-right: 4px solid #1C4404;
+}
+
+
+/** WHITE TEXT WITH BLACK SHADOW IN COURSE TITLE  **/
+.activityTitle h1{
+    font-size:3.5em;
+    font-weight:400;
+    color: white;
+
+
+}
+
+
+/** Nav in Body **/
+
+header .inbody{
+	background: rgba(170,170,170,.9);
+}
+
+header .navbar.inbody{
+	padding-top:0;
+	padding-bottom:0;
+}
+
+header .navbar.inbody .navbar-nav{
+	padding-top:10px;
+}
+
+header .inbody .navbar-brand{
+	background-size: 43px;
+	background-position: top left;
+	margin-top: 5px;
+	padding-bottom: 0;
+	margin-left:10px;
+	visibility:visible;
+}
+
+header .inbody .navbar-brand h1{
+	font-size:1em;
+	padding-left:38px;
+
+}
+header .inbody .navbar-brand span.subhead {
+	display:none;
+}
+
+
+
+/**Header**/
+
+.bgimage{
+	background: #2c4880; /* Old browsers */
+
+	height:400px;
+}
+
+.imageFilter{
+	background-image: url(../../_images/titleImage.jpg);
+	background-position: center center;
+	background-size: cover;
+	height:400px;
+	z-index:0;
+	position:absolute;
+	width:100%;
+	-moz-opacity:.30;
+ 	-ms-filter:"alpha(opacity=30)";
+  	filter:alpha(opacity=30);
+  	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.3);
+  	opacity:.30;
+}
+
+
+
+/** Progress Bar **/
+header .progress{
+	height:10px;
+	background-color:transparent;
+	margin-bottom:0px;
+	visibility:hidden;
+	border-radius:0px;
+	box-shadow: 0px 0px 0px #FFFFFF;
+}
+
+header .progress-bar{
+	background-color:#1C4404;
+}
+
+header .progress.inbody{
+	visibility:visible;
+}
+
+
+
+/** Nav Bar **/
+.navbar-toggle{
+	margin-bottom:0px;
+	margin-top:0px;
+	background-color:white;
+	padding:7px 10px;
+}
+
+.navbar-inverse{
+	width:100%;
+	z-index:100;
+}
+
+.navbar {
+	margin-bottom:0px;
+}
+
+.navbar-right a{
+	background-color:rgba(170,170,170,.9);
+}
+
+.hiddenNav{
+	display:none!important;
+}
+
+
+/** Headers for the 3-Part Lesson Plan **/
+#mindson{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#EEEEEE;
+}
+
+#mindsonTitle{
+	background:#1C4404;
+	margin:10px 0px;
+}
+
+#mindsonTitle img{
+	max-height:70px;
+	min-height:70px;
+	padding:5px 0px;
+}
+
+#mindsonTitle h1{
+	color:#333333;
+}
+
+#action{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#EEEEEE;
+}
+
+#actionTitle{
+	background:#1C4404;
+	margin:10px 0px;
+}
+
+#actionTitle img{
+	max-height:70px;
+	min-height:70px;
+	padding:5px 0px;
+}
+
+#actionTitle h1{
+	color:#333333;
+}
+
+#consolidation{
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#EEEEEE;
+}
+
+#consolidationTitle{
+	background:#1C4404;
+	margin:10px 0px;
+}
+
+#consolidationTitle img{
+	max-height:70px;
+	min-height:70px;
+	padding:5px 0px;
+}
+
+#consolidationTitle h1{
+	color:#333333;
+}
+
+
+
+/** Coloured Panels used for discussions, reflections, rubrics, assignments **/
+.quote-box{
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+	border-width:medium;
+	border-color: #1C4404;
+    background-color: #A9D88D;
+    margin-top: 25px;
+    color:#333;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+
+.quotation-mark{
+    margin-top: -10px;
+    font-weight: bold;
+    font-size:100px;
+    color:#333;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote-text{
+    margin-top: -65px;
+}
+
+blockquote{
+    border-left:none
+}
+.doublePanel1{
+	border:double;
+	border-color: #1C4404;
+}
+
+.doublePanel1-heading h1{
+	margin-top: 1em;
+	color:#000000;
+	font-size:1.8em;
+}
+
+.dashedPanel1{
+	border:dashed;
+	border-color: #1C4404;
+}
+
+.dashedPanel1-heading h1{
+	margin-top: 1em;
+	color:#000000;
+	font-size:1.8em;
+}
+
+.dottedPanel1{
+	border:dotted;
+	border-color: #1C4404;
+}
+
+.dottedPanel1-heading h1{
+	margin-top: 1em;
+	color:#000000;
+	font-size:1.8em;
+}
+
+.solidPanel1{
+	border: groove;
+	border-color: #1C4404;
+}
+
+.solidPanel-heading h1{
+	margin-top: 1em;
+	color:#000000;
+	font-size:1.8em;
+}
+
+.colouredPanel1{
+	background-color: #A9D88D;
+}
+
+.panel-default{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.panel-default .panel-heading{
+	background-color: #1C4404;
+}
+
+.panel-heading h1{
+	color:white;
+	font-size:1.8em;
+}
+
+/**caption**/
+
+.carousel-caption{
+	background-color: rgba(0, 0, 0,0.6);
+	text-align:left;
+	padding:10px;
+}
+
+.carousel-indicators {
+  bottom:-50px;
+  background-color:rgba(220,220,220,.9);
+}
+
+.captionHolder{
+	position: relative;
+}
+
+.caption{
+	background-color: rgba(255,255,255,.6);
+	padding: 10px 5%;
+	position: absolute;
+	bottom: 0px;
+	width: 85%;
+	font-weight:400;
+	border-radius: 0 50px 0 0;
+}
+
+.caption:hover{
+	bacgkground-color: rgba(239,240,196,.9);
+}
+
+.caption .more{
+	opacity:0;
+	font-size:0;
+	line-height:0;
+	padding-top:10px;
+}
+
+.caption .intro::after{
+	content:"...";
+
+}
+
+.caption:hover .intro::after{
+	content:"";
+
+}
+
+.caption:hover .more{
+	display:block;
+	opacity:1;
+	font-size:1em;
+	line-height:120%;
+}
+
+
+.jumbotron{
+	background-color: #A9D88D;
+}
+
+.jumbotron blockquote footer{
+	text-align:right;
+}
+
+.podcast{
+	background-color:#5A5A5A;
+	position: fixed;
+	border-radius:12px;
+	border-style:solid;
+	border-color:#000000;
+	border-width:thin;
+	padding:10px 5px 5px 5px;
+	left:-800px;
+}
+
+.table-responsive table  tbody  tr  td{
+	white-space:normal!important;
+}
+
+table{
+	font-size:0.8em;
+}
+
+table th {
+	text-align:center;
+	background-color:#1C4404;
+	color:white;
+}
+
+.imageAlign {
+	font-size:1.0em;
+}
+
+.equal, .equal > div[class*='col-'] {
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+/* Tooltip */
+.btn-primary{
+	background-color:rgba(225,225,225,.9);
+	padding:1px;
+	font-size:16px;
+	color:black;
+}
+
+#tooltip_container {
+	pointer-events:none;
+	color: #000000;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	position: absolute;
+	max-width:400px;
+	background-color: rgba(230,230,230,1);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	display:none;
+	z-index:1000000000;
+	font-family:Arial, sans-serif;
+	font-size:15px;
+	margin: 0 0 .5em 0;
+
+}
+.tooltip-source-html{display:none;}
+
+/** Media Queries **/
+
+@media (max-width: 1200px) {
+
+  header .navbar-brand h1 {
+	  font-size:1em;
+  }
+
+}
+
+@media only screen and (min-width:913px) and (max-width: 991px)  {
+.modal-lg{
+      width:900px!important;
+  }
+
+}
+
+@media (max-width: 990px) {
+  	#sectionTitle h1{
+	  	text-align:center;
+  	}
+
+  	header .navbar-brand h1 {
+	  	font-size:1em;
+  	}
+
+	.jumpToTop{
+		background-position: center center;
+	}
+
+  	 .left{
+		border-right: none;
+	}
+}
+
+@media (max-width:767px){
+	.jumpToTop{
+		background-position: center top;
+	}
+
+	header .navbar-brand span.subhead {
+	  display:none;
+  	}
+	header .navbar-default .navbar-nav .active a{
+    border-bottom:none!important;
+}
+  	.addToCollapsed{
+		display:block!important;
+	}
+
+	.hiddenButtons{
+		display:none;
+	}
+
+	.hideLogo{
+		display:none;
+	}
+
+	.activityTitle{
+		left:0px;
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+	 #podcastButtonline{
+	margin-top:-40px!important;
+}
+
+.btn{
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+header .navbar-brand{
+	min-width:300px!important;
+}
+}
+
+@supports (-ms-accelerator:true) {
+  /* IE Edge 12+ CSS styles go here */
+
+#podcastButtonline{
+	margin-top:-40px!important;
+	 }
+
+.btn{
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+header .navbar-brand{
+	min-width:300px!important;
+}
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+.gallery {
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.gallery.pop {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.gallery figure {
+  -ms-flex-preferred-size: 33.333%;
+      flex-basis: 33.333%;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.gallery figure img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.gallery figure figcaption {
+	font-size: 11px;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 12px;
+  text-indent: 3px;
+  opacity: .7;
+  letter-spacing: 1px;
+}
